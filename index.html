@@ -5,72 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Effrey Guzman</title>
-    <meta name="description" content="About Effrey Guzman and Web Development">
+    <meta name="description" content="Home Page Web Development - Effrey Guzman - WDD131 (Dynamic Web Fundamentals)">
     <meta name="author" content="Effrey Guzman">
-    <link rel="stylesheet" href="styles/base.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span>Effrey Guzman</span></h1>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/efrey-guzman-0877ba280/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
-                <li><a href="#" target="_blank">Final Project</a></li>
-            </ul>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="gold-text">Effrey Guzman</span></h1>
+        <nav class="hnav">
+            <a href="https://www.linkedin.com/in/efrey-guzman-0877ba280/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
-
     <main>
-        <section class="about-me card">
-            <h2>About me</h2>
-            <div class="about-content">  
+        <section class="card1">
+            <div class="first">
+                <h2 class="about">About me</h2>
+                <img src="images/efrey.jpeg.jpg" alt="Effrey Guzman" width="200">
                 <p>
                     My name is Effrey, and I was born in Colombia. Today, I live with my family in Salt Lake City.
                     I currently work as a contractor sales representative at a sprinkler supply store.
-                    Aside from my professional pursuits, I'm also a student of software development through Pathway Connect at Brigham Young University - Idaho.
+                    Aside from my professional pursuits, I'm also a student of software development through Pathway
+                    Connect at Brigham Young University - Idaho.
                     As a husband and father of three daughters, my triplets are my world. I cherish spending time with
                     them, traveling, watching movies, and exploring new things.
                 </p>
-                <img src="images/efrey.jpeg.jpg" alt="Effrey Guzman" class="profile-img">
             </div>
+            <div class="second">
+                <h2 class="nig">Salt Lake City, Utah</h2>
+                <div class="flag-container">
+                    <figure>
+                        <img src="images/FlagUtah.jpg" alt="Flag of Utah" width="250">
+                        <figcaption>Official Flag of Utah</figcaption>
+                    </figure>
+                    <p>
+                        <strong>Salt Lake City: A Vibrant Urban Oasis</strong>
+                            Nestled amidst majestic mountain vistas, Salt Lake City offers a unique blend of natural
+                            beauty,
+                            cultural richness, and outdoor adventure.
+                            Explore the historic Temple Square, marvel at the city's vibrant arts scene, or indulge in
+                            world-class skiing and snowboarding just minutes away.
+                            From the Great Salt Lake's stunning sunsets to the lively downtown scene, Salt Lake City
+                            promises an
+                            unforgettable experience for visitors of all ages.
+                    </p>
+                </div>
         </section>
+        <section class="card2">
+            <h2 class="webh2">Web Dev. Resources</h2>
+            
+            <nav>
+                <ul class="web">
+                    <p>
+                        
+                    </p>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
 
-        <section class="location card">
-            <h2>Salt Lake City, Utah</h2>
-            <div class="location-content">
-                <img src="images/FlagUtah.jpg" alt="Flag of Utah" class="flag-img">
-                <p class="caption">Official Flag of Utah</p>
-                <p><strong>Salt Lake City: A Vibrant Urban Oasis</strong></p>
-                <p>
-                    Nestled amidst majestic mountain vistas, Salt Lake City offers a unique blend of natural beauty, cultural richness, and outdoor adventure. 
-                    Explore the historic Temple Square, marvel at the city's vibrant arts scene, or indulge in world-class skiing and snowboarding just minutes away. 
-                    From the Great Salt Lake's stunning sunsets to the lively downtown scene, Salt Lake City promises an unforgettable experience for visitors of all ages.
-                </p>
-            </div>
-
-        </section>
-
-        <section class="resources card">
-            <h2>Web Development Resources</h2>
-            <ul>
-                <li><a href="#">Dev.to Community</a></li>
-                <li><a href="#">Smashing Magazine</a></li>
-                <li><a href="#">CSS Tricks</a></li>
-                <li><a href="#">W3 Schools</a></li>
-                <li><a href="#">Udemy</a></li>
-                <li><a href="#">Lorem Picsum Image Placeholder</a></li>
-            </ul>
+                </ul>
+            </nav>
         </section>
     </main>
-
     <footer>
         <p>&copy; <span id="currentyear"></span> &#10052; Effrey Guzman &#10052; Utah</p>
-        <p id="lastModification"></p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
