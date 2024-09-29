@@ -134,11 +134,8 @@ footer {
     margin: 2rem 2rem;
     position: relative;
     background-color: #08205f;
-    /* Adding a light background color */
     border: 2px solid rgb(21, 3, 93);
-    /* Adding a border around the footer */
     padding: 1rem;
-    /* Adding padding to the footer for better spacing */
     border-radius: 10px;
     /* Optionally rounding the corners */
 }
