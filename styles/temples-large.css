@@ -1,0 +1,51 @@
+@media screen and (min-width: 540px) {
+    #menu {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        margin-left: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: 2rem;
+        padding-top: 1rem;
+    }
+
+    .navigation a {
+        display: block;        ;
+        font-size: 1rem;
+        margin-right: 0%;
+    }
+
+    header {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .figure {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
