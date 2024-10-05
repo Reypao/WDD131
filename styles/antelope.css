@@ -1,4 +1,9 @@
 /* General reset */
+:root {
+    --primary-color: #267e99; /* Blue-green */
+    --secondary-color: #f4f4f4; /* Light gray background */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +14,20 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    body {
+        background-color: var(--secondary-color); /* Light gray background */
+        color: var(--primary-color); /* Blue-green text color */
+    }
+    
 }
 
 header {
-    background-color: #11165f; /* Dark red background */
+    background-color: #11165f; /* Dark blue background */
     color: white;
     padding: 20px;
     text-align: center;
     font-size: 2.5rem;
-    header {
-        margin-bottom: 20px;
-    }
-    
-    footer {
-        margin-top: 20px;
-    }
+    margin-bottom: 20px;
 }
 
 main {
