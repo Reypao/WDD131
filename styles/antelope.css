@@ -1,7 +1,7 @@
 /* General reset */
 :root {
     --primary-color: #267e99; /* Blue-green */
-    --secondary-color: #f4f4f4; /* Light gray background */
+    --secondary-color: #e0cfef; /* Light purple background */
 }
 
 * {
@@ -14,12 +14,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--secondary-color); /* Light gray background */
     color: var(--primary-color); /* Blue-green text color */
-    
 }
 
 header {
     background-color: #11165f; /* Dark blue background */
-    color: white;
+    color: rgb(127, 227, 227);
     padding: 20px;
     text-align: center;
     font-size: 2.5rem;
@@ -46,30 +45,30 @@ main {
 
 .superpuesto1, .superpuesto2 {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.85); /* Translucent white */
+    background-color: rgba(255, 255, 255, 0.4); /* Translucent white */
     padding: 20px;
     border-radius: 8px;
     color: black;
 }
 
 .superpuesto1 {
-    top: 15%;
-    left: 5%;
+    top: 5%;
+    left: 2%;
     width: 25%;
     text-align: left;
 }
 
 .superpuesto2 {
-    top: 60%;
-    right: 5%;
+    top: 68%;
+    right: 3.5%;
     width: 25%;
     text-align: left;
 }
 
 #data h2, #weather h2 {
-    background-color: #267e99; /* Blue-green */
-    color: white;
-    padding: 10px;
+    background-color: #267e99;
+    color: rgb(175, 227, 244);
+    padding: 20px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -85,11 +84,11 @@ ul li {
 }
 
 footer {
-    background-color: #1f0f7b; /* Dark blue */
-    color: white;
+    background-color: #1f0f7b;
+    color: rgb(140, 209, 238);
     padding: 20px;
     text-align: center;
-    margin-top: 20px; /* Add this line */
+    margin-top: 20px;
 }
 
 footer p {
@@ -98,7 +97,7 @@ footer p {
 
 #lastModified {
     font-size: 14px;
-    color: #FFD700; /* Yellow color for the last modification text */
+    color: #7d6b08;
 }
 
 /* Media query for screens smaller than 1024px */
@@ -107,4 +106,20 @@ footer p {
         width: 100%;
         height: auto;
     }
+}
+
+#weather h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #267e99;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#weather h2 img.icon {
+    width: 50px; 
+    height: 50px;
+    margin-left: 50px; /* Space between text and icon */
 }
