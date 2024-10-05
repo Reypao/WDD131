@@ -17,6 +17,13 @@ header {
     padding: 20px;
     text-align: center;
     font-size: 2.5rem;
+    header {
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        margin-top: 20px;
+    }
 }
 
 main {
@@ -82,8 +89,22 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    margin-top: 20px; /* Add this line */
 }
 
 footer p {
     margin: 5px 0;
+}
+
+#lastModified {
+    font-size: 14px;
+    color: #FFD700; /* Yellow color for the last modification text */
+}
+
+/* Media query for screens smaller than 1024px */
+@media (max-width: 1024px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
 }

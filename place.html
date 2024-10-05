@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Antelope Island, Utah, is a scenic island featuring wildlife, hiking trails, and beautiful landscapes. Learn more about this unique destination.">
+    <meta name="author" content="Effrey Guzman">
     <title>Antelope Island Information</title>
     <link rel="stylesheet" href="styles/antelope.css">
 </head>
 <body>
 
     <header>
-        <h1>Antelope Island, Utah</h1>
+        <h1>Antelope Island, Great Saltlake - Utah</h1>
     </header>
 
     <main>
-        <section id="hero" class="contenedor">
-            <img src="images/antelopIsland.jpg" srcset="images/antelopIsland.jpg 1024w, images/antelopIsland.jpg 768w" alt="Antelopes and Bisons in the antelopeIsland">
+        <div id="hero" class="contenedor">
+            <picture>
+                <picture>
+                    <source srcset="images/antelopeIsland.webp" type="image/webp">
+                    <img src="images/antelopIsland.jpg" alt="Antelopes and Bisons - The Antelope Island">
+                </picture>
+                
+            </picture>            
             <div class="superpuesto1">
                 <section id="data">
                     <h2>Data</h2>
@@ -40,13 +48,15 @@
                     </ul>
                 </section>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
         <p>&copy; <span id="currentyear"></span> &#10052;  Effrey Guzman  &#10052; Utah</p>
         <p id="lastModified"></p>
     </footer>
+    <script>
+        document.getElementById("lastModified").innerHTML = "Last Modification: " + document.lastModified;
+    </script>    
 </body>
-<script src="scripts/your-script.js"></script>
 </html>
