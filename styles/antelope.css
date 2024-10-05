@@ -12,12 +12,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    body {
-        background-color: var(--secondary-color); /* Light gray background */
-        color: var(--primary-color); /* Blue-green text color */
-    }
+    background-color: var(--secondary-color); /* Light gray background */
+    color: var(--primary-color); /* Blue-green text color */
     
 }
 
