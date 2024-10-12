@@ -16,8 +16,10 @@
     }
 
     h2 {
+        text-align: center;
         font-size: 2rem;
-        margin-bottom: 1rem;
+        color: #32074d;
+        margin-bottom: 1rem 0;
     }
 
     .navigation {
