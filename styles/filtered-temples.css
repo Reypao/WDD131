@@ -88,6 +88,8 @@ nav {
     gap: 20px; /* Adds spacing between items */
     justify-items: center;  /* Center cards horizontally */
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*mobile*/
@@ -124,10 +126,11 @@ figcaption {
     text-align: center;
     border: 1px solid #ccc;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #f9f9f9;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px; /* Ensure cards don't stretch too wide */
+    width: 100%;
 }
 
 .temple img {
@@ -136,6 +139,7 @@ figcaption {
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
 }
 
 .label {

@@ -96,8 +96,30 @@ const temples = [
 ];
 
 createTempleCard(temples); // Call the function to create and display temple cards
+
+// Insert the filtering logic here
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const filter = this.textContent.toLowerCase();  // Get the filter type from the clicked menu item
+
+      let filteredTemples = temples;  // Default to showing all temples
+
+      if (filter === 'old') {
+          filteredTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
+      } else if (filter === 'new') {
+          filteredTemples = temples.filter(t => new Date(t.dedicated).getFullYear() >= 2000);
+      } else if (filter === 'large') {
+          filteredTemples = temples.filter(t => t.area > 90000);
+      } else if (filter === 'small') {
+          filteredTemples = temples.filter(t => t.area < 10000);
+      }
+
+      createTempleCard(filteredTemples);  // Recreate the cards with the filtered data
+  });
+});
 function createTempleCard(filteredTemples) {
-    document.querySelector("rest-grid").innerHTML = ""; // Clear existing cards before creating new ones
+    document.querySelector(".rest-grid").innerHTML = ""; // Clear existing cards before creating new ones
     filteredTemples.forEach(temple => {
         // Create a new card (section) and elements inside
         let card = document.createElement("section");
