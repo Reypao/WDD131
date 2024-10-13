@@ -1,5 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgba(223, 221, 233, 0.925);
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -7,7 +15,7 @@ header {
     margin-top: 0%;
     padding-top: 0%;
     margin-bottom: 0%;
-
+    
 }
 
 h1 {
@@ -20,30 +28,14 @@ h1 {
 }
 
 h2 {
-    text-align: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #32074d;
+    text-align: center;
     margin: 1rem 0;
-    width: 100%;
 }
 
 nav {
     margin: 1rem auto;
-    max-width: 700px;
-    display: flex;
-    justify-content: flex-end; /* Aligns the links to the right */
-    gap: 20px; /* Adds space between the links */
-}
-/* Style for the navigation links */
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem; /* Increase the font size */
-    padding: 0 10px; /* Add some padding around each link */
-}
-
-nav a:hover {
-    color: #e0e0e0; /* Add a hover effect */
 }
 
 #menu {
@@ -52,9 +44,8 @@ nav a:hover {
     background: none;
     color: white;
     position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    top: 0.5rem;
+    right: 1rem;
 }
 
 #menu::before {
@@ -62,23 +53,25 @@ nav a:hover {
 }
 
 #menu.open::before {
-    content: "❌";
+    content: "✖";
 }
 
 .navigation {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
     list-style: none;
-    background-color: #696e6cc2;
+    background-color: #798882c2;
     color: #fff;
+    padding: 1rem;
 }
 
 .navigation a {
-    display: none;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: #fff;
+    font-size: 1.5rem;
 }
 
 .navigation a:hover {
@@ -91,103 +84,54 @@ nav a:hover {
     display: block;
 }
 
-/* Layout the temple cards in a grid */
-.res-grid {
+#temple-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically fit as many columns as possible */
-    gap: 20px; /* Adds spacing between items */
-    /*justify-items: center;  Center cards horizontally */
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px; /* Limit the maximum width of the grid */
+    grid-template-columns:(3, 1fr);
+    justify-content: space-evenly;
+    grid-gap: 1rem;
 }
 
-/*mobile*/
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-    gap: 40px; /* Adds spacing between the grid items */
-    margin: 5rem auto;
-    max-width: 2000px; /* Ensures the grid doesn't stretch too much */
-    padding: 2rem;
+.temple-card {
+    background-color: white;
+    border-radius: 8px;
+    margin-top: .5rem;
     justify-content: center;
-
+    text-align: center;
 }
 
-figure {
-    margin-bottom: .5rem;
-}
-
-figure img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+.temple-card img {
     margin-top: 1rem;
-    border-radius: .5rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-figcaption {
-    color: #32074d;
-    text-align: center;
-}
-
-.temple {
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px; /* Ensure cards don't stretch too wide */
-}
-
-.temple img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.label {
-    color: purple;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-main {
-    margin-top: 2rem; /* Adds space between the header and the main content */
+    margin-bottom: 1rem;
+    width: 350px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    height: auto;
 }
 
 footer {
     background-color: rgb(8, 6, 73);
-    text-align: center;
-    color: white;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
-    margin: 0.5rem 0;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    color: white;
+    padding: 0.5rem 1rem;
 }
 
 #lastModified {
     margin-top: 0rem;
-    color: rgb(220, 243, 11);
+    color: rgb(198, 173, 35);
 }
 
-@media (max-width: 768px) {
-    .res-grid {
-        grid-template-columns: 1fr; /* Switch to single column on mobile */
+@media (min-width: 768px) {
+    #temple-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .res-grid {
-        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on tablets */
+@media (min-width: 1024px) {
+    #temple-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
-

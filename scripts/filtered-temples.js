@@ -1,16 +1,20 @@
-let d = new Date();
-// Set current year and last modified date
-document.getElementById("currentYear").innerHTML = `&copy; ${d().getFullYear()}`;
-document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
-// Add event listener to a button (hamburger menu)
-const hambutton = document.querySelector("#hambutton");
-hambutton.addEventListener('click', () => {
+const currentYear = new Date().getFullYear();
+
+document.getElementById("currentyear").textContent = currentYear;
+
+const lastModifiedDate = document.lastModified;
+
+document.getElementById("lastModified").textContent = `Last Modification: ${lastModifiedDate}`;
+
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+
+hamButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    hamButton.classList.toggle("open");
+
 });
-// Function to toggle an active class
-function toggleActive(element) {
-    element.classList.toggle("active");
-}
-// Array of temple data (initially empty, populate it with real data)
+
 const temples = [
     {
       templeName: "Aba Nigeria",
@@ -61,106 +65,93 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     },
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
-        imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-      },
-      {
-        templeName: "Cordoba Argentina",
-        location: "Cordoba, Argentina",
-        dedicated: "2015, Mayo, 17",
-        area: 34369,
-        imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cordoba-argentina/1280x800/cordoba-argentina-temples-buildings-1436934-wallpaper.jpg"
-      },
-      {
-        templeName: "Jordan River Utah",
-        location: "South Jordan, Utah, United States",
-        dedicated: "1981, November, 16",
-        area: 148236,
-        imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/1280x800/jordan-river-temple-lds-941302-wallpaper.jpg"
-      },
-      {
-        templeName: "Washington D.C.",
-        location: "Washington D.C., United States",
-        dedicated: "1974, November, 19",
-        area: 156558,
-        imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/1280x800/washington_dc_temple-exterior-2.jpeg"
-      }
-    // Add more temple objects here...
+      templeName: "Mexico City Mexico",
+      location: "Mexico City, Mexico",
+      dedicated: "1983, December, 2",
+      area: 116642,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
+    {
+      templeName: "Cordoba Argentina",
+      location: "Cordoba, Argentina",
+      dedicated: "2015, Mayo, 17",
+      area: 34369,
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cordoba-argentina/1280x800/cordoba-argentina-temples-buildings-1436934-wallpaper.jpg"
+    },
+    {
+      templeName: "Jordan River Utah",
+      location: "South Jordan, Utah, United States",
+      dedicated: "1981, November, 16",
+      area: 148236,
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/1280x800/jordan-river-temple-lds-941302-wallpaper.jpg"
+    },
+    {
+      templeName: "Washington D.C.",
+      location: "Washington D.C., United States",
+      dedicated: "1974, November, 19",
+      area: 156558,
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/1280x800/washington_dc_temple-exterior-2.jpeg"
+    }
 ];
 
-createTempleCard(temples); // Call the function to create and display temple cards
+// filtering functions
+function filterOldTemples() {
+    return temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+}
 
-// Insert the filtering logic here
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const filter = this.textContent.toLowerCase();  // Get the filter type from the clicked menu item
+function filterNewTemples() {
+    return temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+}
 
-      let filteredTemples = temples;  // Default to showing all temples
+function filterLargeTemples() {
+    return temples.filter(temple => temple.area > 90000);
+}
 
-      if (filter === 'old') {
-          filteredTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
-      } else if (filter === 'new') {
-          filteredTemples = temples.filter(t => new Date(t.dedicated).getFullYear() >= 2000);
-      } else if (filter === 'large') {
-          filteredTemples = temples.filter(t => t.area > 90000);
-      } else if (filter === 'small') {
-          filteredTemples = temples.filter(t => t.area < 10000);
-      }
+function filterSmallTemples() {
+    return temples.filter(temple => temple.area < 10000);
+}
 
-      createTempleCard(filteredTemples);  // Recreate the cards with the filtered data
-  });
+displayTemples(temples);
+
+
+// Event listeners for each filter category
+document.getElementById('old-temples').addEventListener('click', () => {
+    displayTemples(filterOldTemples());
 });
-function createTempleCard(filteredTemples) {
-    document.querySelector(".rest-grid").innerHTML = ""; // Clear existing cards before creating new ones
+
+document.getElementById('new-temples').addEventListener('click', () => {
+    displayTemples(filterNewTemples());
+});
+
+document.getElementById('large-temples').addEventListener('click', () => {
+    displayTemples(filterLargeTemples());
+});
+
+document.getElementById('small-temples').addEventListener('click', () => {
+    displayTemples(filterSmallTemples());
+});
+
+document.getElementById('home').addEventListener('click', () => {
+    displayTemples(temples);
+});
+
+function displayTemples(filteredTemples) {
+    const templeContainer = document.getElementById("temple-container");
+    templeContainer.innerHTML = '';
+    
     filteredTemples.forEach(temple => {
-        // Create a new card (section) and elements inside
-        let card = document.createElement("section");
-        let name = document.createElement("h3");
-        let location = document.createElement("p");
-        let dedication = document.createElement("p");
-        let area = document.createElement("p");
-        let img = document.createElement("img");
+        const card = document.createElement("div");
+        card.className ="temple-card";
 
-        // Fill the elements with temple data
-        name.textContent = temple.templeName;
-        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
-        img.setAttribute("src", temple.imageUrl);
-        img.setAttribute("alt", `${temple.templeName} Temple`);
-        img.setAttribute("loading", "lazy");
+        card.innerHTML = `
+            <h2>${temple.templeName}</h2>
+            <p>Location: ${temple.location}</p>
+            <p>Dedicated: ${temple.dedicated}</p>
+            <p>Area: ${temple.area} square feet</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        `;
 
-        // Append the elements to the card
-        card.appendChild(name);
-        card.appendChild(location);
-        card.appendChild(dedication);
-        card.appendChild(area);
-        card.appendChild(img);
-
-        document.querySelector("rest-grid").appendChild(card);
-});
-
-
-const currentYear = new Date().getFullYear();
-
-document.getElementById("currentyear").textContent = currentYear;
-
-const lastModifiedDate = document.lastModified;
-
-document.getElementById("lastModified").textContent = `Last Modification: ${lastModifiedDate}`;
-
-const hamButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
-
-hamButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-    hamButton.classList.toggle("open");
-})};
+        templeContainer.appendChild(card);       
+    });
+}
