@@ -1,14 +1,14 @@
 /* Basic styles for body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #eff3ed;
     margin: 0;
     padding: 0;
 }
 
 /* Header styles */
 header {
-    background-color: #56e0d9;
+    background-color: #23399a;
     padding: 20px;
     text-align: center;
 }
@@ -71,7 +71,7 @@ select {
 
 .rating label {
     font-size: 24px;
-    color: #ddd;
+    color: #3d5516;
     cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ select {
 /* Submit Button */
 input[type="submit"] {
     width: 100%;
-    background-color: #56e0d9;
+    background-color: #23399a;
     color: white;
     padding: 12px 0;
     border: none;
@@ -118,7 +118,7 @@ footer p {
 
 /* Container styling for the main content */
 main {
-    background-color: #eed8ed; /* light purple color */
+    background-color: #9ac4e3; /* light green color */
     padding: 30px;
     max-width: 500px; /* To match the screenshot's layout */
     margin: 20px auto;
@@ -130,14 +130,14 @@ header h1 {
     font-size: 28px;
     margin-bottom: 15px;
     color: #fff;
-    background-color: #4e0e3b;
+    background-color: #23399a;
     padding: 20px;
     border-radius: 5px;
 }
 
 /* Form background and shadow to elevate it */
 form {
-    background-color: #eed8ed; /* Lighter background inside the form */
+    background-color: #9ac4e3; /* Lighter background inside the form */
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding shadow */
@@ -147,14 +147,14 @@ form {
 .rating {
     display: flex;
     justify-content: space-between;
-    width: 200px; /* Matching width similar to the example */
+    width: 200px; 
     margin-bottom: 20px;
 }
 
-/* Footer styling */
+/* Footer style */
 footer {
-    font-size: 12px;
-    color: #99d2f4;
+    font-size: 20px;
+    color: #c6deec;
     text-align: center;
     margin-top: 20px;
     background-color: #23399a;
@@ -166,7 +166,7 @@ footer p {
 
 /* Adjusting spacing for form elements */
 input[type="submit"] {
-    background-color: #61426e;
+    background-color: #124e26;
     padding: 12px 0;
     font-size: 16px;
     border-radius: 8px;
@@ -174,7 +174,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #d4a0f5; /* Color to match the theme */
+    background-color: #d4a0f5; 
 }
 
 input[type="text"], input[type="date"], textarea {
