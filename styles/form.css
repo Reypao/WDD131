@@ -32,7 +32,7 @@ form {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(52, 51, 51, 0.1);
 }
 
 label {
@@ -43,7 +43,7 @@ label {
 
 label span {
     font-weight: normal;
-    color: #666;
+    color: #903131;
 }
 
 input[type="text"],
@@ -118,7 +118,7 @@ footer p {
 
 /* Container styling for the main content */
 main {
-    background-color: #d1c0c0; /* light purple color */
+    background-color: #eed8ed; /* light purple color */
     padding: 30px;
     max-width: 500px; /* To match the screenshot's layout */
     margin: 20px auto;
@@ -137,7 +137,7 @@ header h1 {
 
 /* Form background and shadow to elevate it */
 form {
-    background-color: #e9e2e2; /* Lighter background inside the form */
+    background-color: #eed8ed; /* Lighter background inside the form */
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding shadow */
@@ -154,18 +154,19 @@ form {
 /* Footer styling */
 footer {
     font-size: 12px;
-    color: #666;
+    color: #99d2f4;
     text-align: center;
     margin-top: 20px;
+    background-color: #23399a;
 }
 
 footer p {
     margin: 5px 0;
-
+}
 
 /* Adjusting spacing for form elements */
 input[type="submit"] {
-    background-color: #b39b8f;
+    background-color: #61426e;
     padding: 12px 0;
     font-size: 16px;
     border-radius: 8px;
@@ -173,7 +174,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #4e0e3b; /* Color to match the theme */
+    background-color: #d4a0f5; /* Color to match the theme */
 }
 
 input[type="text"], input[type="date"], textarea {
@@ -192,4 +193,3 @@ label span {
     font-style: italic;
     color: #6f6f6f; /* Subtle color for optional fields */
 }
-
