@@ -8,7 +8,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #23399a;
+    background-color: #485fc9;
     padding: 20px;
     text-align: center;
 }
@@ -84,7 +84,7 @@ select {
 /* Submit Button */
 input[type="submit"] {
     width: 100%;
-    background-color: #23399a;
+    background-color: #485fc9;
     color: white;
     padding: 12px 0;
     border: none;
@@ -94,7 +94,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #56e0d9;
+    background-color: #bae1df;
 }
 
 /* Footer */
@@ -118,7 +118,7 @@ footer p {
 
 /* Container styling for the main content */
 main {
-    background-color: #9ac4e3; /* light green color */
+    background-color: #9ac4e3; 
     padding: 30px;
     max-width: 500px; /* To match the screenshot's layout */
     margin: 20px auto;
@@ -130,17 +130,17 @@ header h1 {
     font-size: 28px;
     margin-bottom: 15px;
     color: #fff;
-    background-color: #23399a;
+    background-color: #485fc9;
     padding: 20px;
     border-radius: 5px;
 }
 
 /* Form background and shadow to elevate it */
 form {
-    background-color: #9ac4e3; /* Lighter background inside the form */
+    background-color: #9ac4e3; 
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 /* Style adjustments for the stars rating system */
@@ -154,10 +154,10 @@ form {
 /* Footer style */
 footer {
     font-size: 20px;
-    color: #c6deec;
+    color: #f0f2f4;
     text-align: center;
     margin-top: 20px;
-    background-color: #23399a;
+    background-color: #485fc9;
 }
 
 footer p {
@@ -166,7 +166,7 @@ footer p {
 
 /* Adjusting spacing for form elements */
 input[type="submit"] {
-    background-color: #124e26;
+    background-color: #399c8a;
     padding: 12px 0;
     font-size: 16px;
     border-radius: 8px;
