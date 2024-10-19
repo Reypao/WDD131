@@ -1,6 +1,6 @@
 /* Basic styles for body */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #eff3ed;
     margin: 0;
     padding: 0;
@@ -86,7 +86,8 @@ select {
 }
 
 /* Submit Button */
-input[type="submit"] {
+input[type="submit"]:focus {
+    outline: 2px solid #000;
     width: 100%;
     background-color: #399c8a;
     color: white;
