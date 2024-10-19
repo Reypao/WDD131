@@ -86,8 +86,7 @@ select {
 }
 
 /* Submit Button */
-input[type="submit"]:focus {
-    outline: 2px solid #000;
+input[type="submit"] {
     width: 100%;
     background-color: #399c8a;
     color: white;
