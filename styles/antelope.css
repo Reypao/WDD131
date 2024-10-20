@@ -1,7 +1,7 @@
 /* General reset */
 :root {
-    --primary-color: #267e99; /* Blue-green */
-    --secondary-color: #e0cfef; /* Light purple background */
+    --primary-color: #267e99; 
+    --secondary-color: #e0cfef; 
 }
 
 * {
@@ -12,12 +12,12 @@
 
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-    background-color: var(--secondary-color); /* Light gray background */
-    color: var(--primary-color); /* Blue-green text color */
+    background-color: var(--secondary-color); 
+    color: var(--primary-color);
 }
 
 header {
-    background-color: #11165f; /* Dark blue background */
+    background-color: #11165f; 
     color: rgb(127, 227, 227);
     padding: 20px;
     text-align: center;
@@ -45,7 +45,7 @@ main {
 
 .superpuesto1, .superpuesto2 {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.4); /* Translucent white */
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 20px;
     border-radius: 8px;
     color: black;
@@ -100,14 +100,6 @@ footer p {
     color: #7d6b08;
 }
 
-/* Media query for screens smaller than 1024px */
-@media (max-width: 1024px) {
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
 #weather h2 {
     display: flex;
     align-items: center;
@@ -121,5 +113,23 @@ footer p {
 #weather h2 img.icon {
     width: 50px; 
     height: 50px;
-    margin-left: 50px; /* Space between text and icon */
+    margin-left: 10px;
+    display: none;
+}
+
+/* Add the pseudo-element for desktop view */
+#weather h2::after {
+    content: "⛅"; /* Emoticon for weather in larger screens */
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+/* Media query to hide pseudo-element on mobile and show SVG */
+@media (max-width: 768px) {
+    #weather h2::after {
+        content: ""; /* Hide the emoticon */
+    }
+
+    #weather h2 img.icon {
+        display: inline-block; /* Show SVG icon in mobile view */
+    }
 }
