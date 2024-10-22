@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <h1>sprinklerusa</h1>
+        <h1>SprinklerUSA</h1>
 
         <button type="button" id="menu"></button>
         <nav class="navigation">
@@ -34,10 +34,27 @@
             </div>
             <br>
         </div>
+<!-- Contact Form -->
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="https://example.com/submit-form" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message here" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> &#10052;  Effrey Guzman  &#10052; Utah</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/sprinklerusa.js" defer></script>
 </body>
 </html>

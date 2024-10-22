@@ -20,7 +20,7 @@ header {
 
 h1 {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
     margin-left: 1rem;
     padding-top: 0.5rem;
@@ -71,7 +71,7 @@ nav {
     text-align: center;
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .navigation a:hover {
@@ -86,7 +86,7 @@ nav {
 
 #temple-container {
     display: grid;
-    grid-template-columns:(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
     grid-gap: 1rem;
 }
@@ -116,7 +116,7 @@ footer p {
     margin-top: 1rem;
     margin-bottom: 0rem;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
 }
 
 #lastModified {
