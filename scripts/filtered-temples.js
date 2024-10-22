@@ -87,11 +87,11 @@ const temples = [
       imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/jordan-river-utah/1280x800/jordan-river-temple-lds-941302-wallpaper.jpg"
     },
     {
-      templeName: "Washington D.C.",
-      location: "Washington D.C., United States",
-      dedicated: "1974, November, 19",
-      area: 156558,
-      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/1280x800/washington_dc_temple-exterior-2.jpeg"
+      templeName: "Bogota Temple",
+      location: "Bogota, Colombia",
+      dedicated: "1999, April, 24",
+      area: 53500,
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/800x500/bogota-colombia-temple-lds-1029726-wallpaper.jpg"
     }
 ];
 
