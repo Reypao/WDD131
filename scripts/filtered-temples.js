@@ -114,8 +114,6 @@ function filterSmallTemples() {
 
 displayTemples(temples);
 
-
-// Event listeners for each filter category
 document.getElementById('old-temples').addEventListener('click', () => {
     displayTemples(filterOldTemples());
 });
