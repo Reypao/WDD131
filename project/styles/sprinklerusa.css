@@ -11,11 +11,19 @@ body {
 }
 
 header {
-    background-color: rgb(27, 5, 117);
+    background-color: rgb(30, 121, 18);
     margin-top: 0%;
     padding-top: 0%;
     margin-bottom: 0%;
     
+}
+
+/* Style the logo */
+#logo {
+    max-width: 250px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the logo if needed */
 }
 
 h1 {
@@ -28,7 +36,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 2.3rem;
     color: #32074d;
     text-align: center;
     margin: 1rem 0;
@@ -39,7 +47,7 @@ nav {
 }
 
 #menu {
-    font-size: 1.5rem;
+    font-size: 5rem;
     border: 0;
     background: none;
     color: white;
@@ -70,8 +78,8 @@ nav {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
+    color: #dde03b;
+    font-size: 1.3rem !important; 
 }
 
 .navigation a:hover {
@@ -108,7 +116,7 @@ nav {
 }
 
 footer {
-    background-color: rgb(8, 6, 73);
+    background-color: rgb(30, 121, 18);
 }
 
 footer p {
@@ -117,11 +125,14 @@ footer p {
     margin-bottom: 0rem;
     color: white;
     padding: 0.5rem 1rem;
+    font-size: 1.3rem;
 }
 
 #lastModified {
     margin-top: 0rem;
     color: rgb(198, 173, 35);
+    display: block;
+    font-size: 1.3rem;
 }
 
 @media (min-width: 768px) {
@@ -136,14 +147,35 @@ footer p {
     }
 }
 
-.contenedor {
+.container {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 65%;
     margin: 0 auto;
 }
 
-.columna {
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.mainstyle {
+    background-image:url('../images/instalation_background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.column {
     width: 85%;
     margin: 20px;
     background-color: #f7f7f7;
@@ -153,14 +185,14 @@ footer p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.columna img {
+.column img {
     width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
-.columna.text {
+.column.text {
     padding: 20px;
 }
 
@@ -233,16 +265,32 @@ footer p {
   .form-submit {
     width: 100%;
     margin-top: 1.2rem;
-    background-color: #3124ca;
+    background-color: #ebeaf1;
     color: #fff;
     padding: 13px 5px;
     border-radius: 0.375rem;
   }
+
+  /*CSS for the slogan */
+.slogan h2 {
+    position: absolute;
+    text-align: right;
+    color: rgb(15, 67, 6); /* Adjust text color for visibility */
+    font-size: 2.5rem;
+    font-family: 'Permanent Marker', cursive;
+    background-color: rgba(100, 143, 107, 0); /* Semi-transparent background for better readability */
+    padding: 10px 20px;
+    border-radius: 10px;
+    bottom: 20px;
+    right: 20;
+    left: 50%;
+    text-shadow: 4px 4px 4px rgba(164, 192, 173, 0.7);
+}
 /* Style for the background container */
 .background-container {
     background-image: url('../images/background.jpg'); /* Correct relative path to your image */
     background-size: cover; /* Ensures the image covers the entire area without distortion */
-    background-position: center; /* Centers the background image */
+    background-position: relative; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     height: 100vh; /* Full screen height */
     width: 100%; /* Full screen width */
