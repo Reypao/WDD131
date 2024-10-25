@@ -69,7 +69,7 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
-    background-color: #798882c2;
+    background-color: #798883c2;
     color: #fff;
     padding: 1rem;
 }
@@ -156,16 +156,18 @@ footer p {
 
 .container1 {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     max-width: 65%;
-    margin: 0 auto;
+    margin: 20px;
 }
 
 .container2 {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     max-width: 65%;
-    margin: 0 auto;
+    margin: 20px;
 }
 
 .mainstyle {
@@ -187,13 +189,82 @@ footer p {
 
 .column img {
     width: 100%;
-    height: 150px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
 .column.text {
     padding: 20px;
+}
+
+/* CSS for the services section - updated for side-by-side layout */
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.column img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.text {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.text p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Flexbox layout for image and text */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 20px auto;
+    max-width: 95%;
+    gap: 20px;
+}
+
+.columna {
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+} 
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.texto {
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.texto h2 {
+    font-size: 1.9rem;
+}
+
+.texto ul {
+    margin-top: 1rem;
+    line-height: 1.6;
 }
 
 /*contact section the form */
@@ -249,7 +320,7 @@ footer p {
   
   .form-input::placeholder,
   .form-textarea:focus-visible {
-    color: #6b7280;
+    color: #c4f5b1;
   }
   
   .form-input:focus-visible,
@@ -284,7 +355,7 @@ footer p {
     bottom: 20px;
     right: 20;
     left: 50%;
-    text-shadow: 4px 4px 4px rgba(164, 192, 173, 0.7);
+    text-shadow: 4px 4px 4px rgba(209, 225, 214, 0.7);
 }
 /* Style for the background container */
 .background-container {
