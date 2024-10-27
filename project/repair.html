@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Picture Of Irrigation</title>
+    <meta name="description" content="Picture Album">
+    <meta name="author" content="Effrey Guzman">
+    <link href="styles/sprinklerusa.css" rel="stylesheet">
+    <link href="styles/sprinklerusa-large.css" rel="stylesheet">
+    <script src="scripts/sprinklerusa.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"><img src="images/sprinklerusalogo.jpg" alt="SprinklerUSA Logo" id="logo"></a></h1>
+        <button type="button" id="menu"></button>
+        <nav class="navigation">
+            <a href="sprinklerusa.html" id="home">Home</a>
+            <a href="services.html" id="services">Services</a>
+            <a href="installation.html" id="installations">Installations</a>
+            <a href="repair.html" id="sprinklerrepair">Sprinkler Repair</a>
+            <a href="consultation.html" id="requestconsultation">Request Consultation</a>
+        </nav>
+    </header>
+    <main id="repair-img">
+        <div class="overlay">
+            <div class="text">
+                <h2 id="repair-title1">What are Sprinkler Repairs?</h2>
+                <p id="repair-text1">Sprinkler repairs encompass a broad range of services aimed at restoring your sprinkler system to its optimal functionality. This could involve fixing a broken part, recalibrating sprinkler heads, or replacing damaged pipes. Here are some of the common sprinkler problems:</p>
+                <ul>
+                    <li>Broken or Leaking Pipes: Often caused by lawn equipment or root growth, broken pipes can lead to water wastage and uneven irrigation.</li>
+                    <li>Misaligned Sprinkler Heads: This can result in over-watering some areas while leaving others parched.</li>
+                    <li>Clogged Nozzles: Dirt and debris can block sprinkler heads, reducing their efficiency.</li>
+                    <li>Faulty Timers: An irrigation system that doesn’t start or stop as scheduled can lead to water wastage.</li>
+                </ul>
+            </div>
+            
+            <div class="text">
+                <h2 id="repair-title2">Why Choose SprinklerUSA?</h2>
+                <p id="repair-text2">Don’t let a faulty sprinkler system dampen the beauty of your property. SprinklerUSA stands out, boasting two illustrious decades of experience in the field. We offer custom solutions tailored to your landscape’s demands. Our promise? Fast service, expert advice, and fair pricing. Our seasoned team consistently delivers work marked by quality and precision, ensuring that every sprinkler repair we undertake meets the highest industry standards.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#10052;  Effrey Guzman  &#10052; Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        const lastModifiedDate = document.lastModified;
+        document.getElementById("lastModified").textContent = `Last Modification: ${lastModifiedDate}`;
+    </script>
+</body>
+</html>

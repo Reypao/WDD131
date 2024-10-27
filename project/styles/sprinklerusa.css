@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(30, 121, 18);
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 0%;   
+}
+
+h1 {
+    text-align: left;
+    font-size: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 1rem;
+    padding-top: 0.5rem;
+    color: rgb(14, 13, 13);
+}
+
+h2 {
+    font-size: 2.3rem;
+    color: #f8f8fb;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.h2services {
+    font-size: 2.3rem;
+    color: #090909;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+nav {
+    margin: 1rem auto;
+}
+
+footer {
+    background-color: rgb(30, 121, 18);
+}
+
+footer p {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: #798883c2;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navigation a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #dde03b;
+    font-size: 1.3rem !important; 
+}
+
+.navigation a:hover {
+    background-color: rgba(231, 154, 11, 0.555);
+    color: #1b1919;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 65%;
+    margin: 0 auto;
+    background-color: white !important;
+    display: flex;
+    align-items: flex-start;
+    max-width: 95% !important;
+    justify-content: space-between;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.container1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 65%;
+    margin: 20px;
+}
+
+.installation {
+    height: 800px !important;
+}
+
+.column {
+    width: 85%;
+    margin: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column2 {
+    width: 55%;
+    margin: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.column.text {
+    padding: 20px;
+}
+
+.column2 .text {
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    width: 50% !important;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.text {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.text p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Flexbox layout for image and text */
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.text {
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+/*contact section the form */
+body, html {
+    background-color: rgba(223, 221, 233, 0.925);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Contact Form Section*/
+#contact-form-section {
+    color: white;
+    padding: 2rem;
+    margin-top: 1rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form-section input,
+#contact-form-section textarea,
+#contact-form-section button {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/* Background and Image Containers */
+.background-container {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Changed from height to min-height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#consultation-img,
+#repair-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 800px; /* Changed from fixed height to min-height */
+}
+
+/* Logo Styling */
+#logo {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Menu Icon Styling */
+#menu {
+    font-size: 5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* Last Modified Text */
+#lastModified {
+    margin-top: 0rem;
+    color: rgb(198, 173, 35);
+    display: block;
+    font-size: 1.3rem;
+}
+
+  /*CSS for the slogan */
+.slogan h2 {
+    position: absolute;
+    text-align: right;
+    color: rgb(15, 67, 6); /* Adjust text color for visibility */
+    font-size: 3.0rem;
+    font-family: 'Permanent Marker', cursive;
+    background-color: rgba(100, 143, 107, 0); /* Semi-transparent background for better readability */
+    padding: 10px 20px;
+    border-radius: 10px;
+    bottom: 3px;
+    right: 20px;
+    left: 50%;
+    text-shadow: 4px 4px 4px rgba(209, 225, 214, 0.7);
+}
+/* Style for the background container*/
+.background-container {
+    background-image: url('../images/background.jpg'); /* Correct relative path to your image*/ 
+    background-size: cover; /* Ensures the image covers the entire area without distortion*/ 
+    background-repeat: no-repeat; /* Prevents the image from repeating*/
+    height: 100vh; /* Full screen height*/ 
+    width: 100%; /* Full screen width*/ 
+    display: flex; /* Flexbox layout if you want to center content*/
+    justify-content: center; /* Horizontally center content*/
+    align-items: center; /* Vertically center content*/ 
+}
+
+#repair-img {
+    background-image: url('../images/repair.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 800px;
+}
+
+.overlay {
+    background-color: rgba(160, 237, 185, 0.2); /* Semi-transparent black*/ 
+    color: rgb(11, 11, 11);
+    padding: 2rem;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.text {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+#repair-title1, #repair-title2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#repair-text1, #repair-text2 {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#repair-img .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white;
+    padding: 2rem;
+    max-width: 90%;
+    border-radius: 10px;
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.8;
+}
+
+#repair-img .overlay p,
+#repair-img .overlay ul li {
+    font-size: 1.2rem; /* Matches the font size of the example */
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#repair-img .overlay ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+#repair-img .overlay ul li {
+    margin-bottom: 0.5rem;
+}
+
+#consultation-img {
+    background-image: url('../images/SPRINKLER1.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 800px;
+    width: 100%;
+    background-size: cover;
+    justify-content: flex-end;
+}
+
+/* Style the logo */
+#logo {
+    max-width: 250px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the logo if needed */
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+#lastModified {
+    margin-top: 0rem;
+    color: rgb(198, 173, 35);
+    display: block;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+    #temple-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #temple-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
