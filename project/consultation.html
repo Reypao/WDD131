@@ -65,7 +65,7 @@
 
         // Save form data to localStorage on form submission
         form.addEventListener("submit", (e) => {
-            e.preventDefault(); // Prevent default submission
+            e.preventDefault(); 
 
             // Save each form field value to localStorage
             localStorage.setItem("name", nameInput.value);
@@ -76,7 +76,7 @@
             alert("Your information has been saved locally.");
 
             // Submit the form after saving to localStorage
-            form.submit(); // Comment out if you do not want the form to actually submit
+            form.submit(); 
         });
     </script>
 </body>
