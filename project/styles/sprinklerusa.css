@@ -54,11 +54,11 @@ footer p {
 .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    list-style: none;
+    justify-content: space-evenly;
     background-color: #798883c2;
     color: #fff;
     padding: 1rem;
+    flex-wrap: nowrap;
 }
 
 .navigation a {
@@ -66,7 +66,7 @@ footer p {
     text-align: center;
     text-decoration: none;
     color: #dde03b;
-    font-size: 1.3rem !important; 
+    font-size: 1.2rem !important; 
 }
 
 .navigation a:hover {
@@ -102,7 +102,7 @@ footer p {
 }
 
 .installation {
-    height: 800px !important;
+    height: 400px !important;
 }
 
 .column {
@@ -217,7 +217,7 @@ main {
     background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Changed from height to min-height */
+    min-height: 100vh; 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -229,7 +229,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 800px; /* Changed from fixed height to min-height */
+    min-height: 800px; 
 }
 
 /* Logo Styling */
@@ -251,22 +251,6 @@ main {
     right: 1rem;
 }
 
-#menu::before {
-    content: "≡";
-}
-
-#menu.open::before {
-    content: "✖";
-}
-
-/* Last Modified Text */
-#lastModified {
-    margin-top: 0rem;
-    color: rgb(198, 173, 35);
-    display: block;
-    font-size: 1.3rem;
-}
-
   /*CSS for the slogan */
 .slogan h2 {
     position: absolute;
@@ -284,14 +268,14 @@ main {
 }
 /* Style for the background container*/
 .background-container {
-    background-image: url('../images/background.jpg'); /* Correct relative path to your image*/ 
-    background-size: cover; /* Ensures the image covers the entire area without distortion*/ 
-    background-repeat: no-repeat; /* Prevents the image from repeating*/
-    height: 100vh; /* Full screen height*/ 
-    width: 100%; /* Full screen width*/ 
-    display: flex; /* Flexbox layout if you want to center content*/
-    justify-content: center; /* Horizontally center content*/
-    align-items: center; /* Vertically center content*/ 
+    background-image: url('../images/background.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 #repair-img {
@@ -370,10 +354,10 @@ main {
 
 /* Style the logo */
 #logo {
-    max-width: 250px; /* Adjust the width of the logo as needed */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; 
+    height: auto; 
     display: block;
-    margin: 0 auto; /* Center the logo if needed */
+    margin: 0 auto; 
 }
 
 #menu::before {
@@ -389,6 +373,11 @@ main {
     color: rgb(198, 173, 35);
     display: block;
     font-size: 1.3rem;
+}
+
+.text h3 {
+    color: rgb(254, 252, 252);
+    text-align: center;
 }
 
 @media (min-width: 768px) {
