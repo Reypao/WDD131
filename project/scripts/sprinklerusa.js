@@ -4,7 +4,8 @@ document.getElementById("currentyear").textContent = currentYear;
 
 const lastModifiedDate = document.lastModified;
 
-//document.getElementById("lastModified").textContent = LastModification: ${lastModifiedDate};
+//document.getElementById("lastModified").textContent = `Last Modification: ${lastModifiedDate}`;
+
 
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
