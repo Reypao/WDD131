@@ -86,3 +86,56 @@ main {
 #contact-form-section button:hover {
     background-color: rgb(20, 100, 10);
 }
+
+/* General styles for all screen sizes */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Mobile-first styles (small screens) */
+header, main, footer {
+    padding: 1rem;
+}
+
+/* Default styles for smaller screens (up to 600px) */
+.container, .service-item {
+    display: block;
+    padding: 1rem;
+}
+
+/* Medium screens (tablets and landscape mobile - 600px and up) */
+@media (min-width: 600px) {
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .service-item {
+        flex: 1 1 calc(50% - 1rem); 
+        margin: 0.5rem;
+    }
+}
+
+/* Large screens (desktops - 1024px and up) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .service-item {
+        flex: 1 1 calc(33.333% - 1rem); 
+    }
+
+    header, footer {
+        padding: 2rem;
+    }
+}
