@@ -1,0 +1,88 @@
+/* General Page Layout */
+main {
+    padding: 2rem;
+}
+
+/* Services Details Styling */
+.services-details {
+    text-align: center;
+    padding: 2rem;
+    background-color: #bc0f0f;
+}
+
+.services-details h2 {
+    font-size: 2.5rem;
+    color: #000000 !important;
+    margin-bottom: 1.5rem;
+}
+
+.service-item {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: rgb(30, 121, 18);
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contact Form Styling */
+#contact-form-section {
+    background-color: #e0f7e0;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form-section h3 {
+    font-size: 2rem;
+    color: rgb(30, 121, 18);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#contact-form-section label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+#contact-form-section input,
+#contact-form-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contact-form-section button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: rgb(30, 121, 18);
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#contact-form-section button:hover {
+    background-color: rgb(20, 100, 10);
+}

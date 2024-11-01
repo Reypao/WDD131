@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprinklerUSA Site Plan</title>
+    <meta name="description" content="A comprehensive blueprint for the SprinklerUSA website design and development.">
+    <link href="styles/sprinklerusa.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"><img src="images/sprinklerusalogo.jpg" alt="SprinklerUSA Logo" id="logo"></a></h1>
+        <nav class="navigation">
+            <a href="siteplan.html" id="home">Home</a>
+            <a href="service.html" id="service">Service</a>
+            <a href="contactus.html" id="requestconsultation">Request Consultation</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Services Section -->
+        <section class="services-overview">
+            <h2>Our Services</h2>
+            <div class="container">
+                <div class="column">
+                    <h3>Residential Irrigation</h3>
+                    <p>Customized systems for lush, green lawns and blooming gardens.</p>
+                </div>
+                <div class="column">
+                    <h3>Commercial Irrigation</h3>
+                    <p>Scalable irrigation solutions for large properties.</p>
+                </div>
+                <div class="column">
+                    <h3>Eco-Friendly Options</h3>
+                    <p>Water-efficient systems for sustainable landscaping.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Effrey Guzman, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Set current year and last modification date in the footer
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+    </script>
+</body>
+</html>

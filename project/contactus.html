@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprinklerUSA | Contact Us</title>
+    <link href="styles/sprinklerusa.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"><img src="images/sprinklerusalogo.jpg" alt="SprinklerUSA Logo" id="logo"></a></h1>
+        <nav class="navigation">
+            <a href="siteplan.html" id="home">Home</a>
+            <a href="service.html" id="service">Service</a>
+            <a href="contactus.html" id="contactus">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Form Section -->
+        <section id="contact-form-section">
+            <h3>Contact Us</h3>
+            <form action="https://example.com/submit-form" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message here" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Effrey Guzman, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/sprinklerusa.js"></script>
+</body>
+</html>
