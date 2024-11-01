@@ -4,15 +4,15 @@ main {
 }
 
 /* Services Details Styling */
-.services-details {
+.service-details {
     text-align: center;
     padding: 2rem;
-    background-color: #bc0f0f;
+    background-color: #f1ecec;
 }
 
-.services-details h2 {
+.service-details h2 {
     font-size: 2.5rem;
-    color: #000000 !important;
+    color: #333333;
     margin-bottom: 1.5rem;
 }
 
